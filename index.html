@@ -14,12 +14,13 @@
         </style>
         <script>
             function changeBackgroundColor() {
+                console.log("hello")
                 const letters = '0123456789ABCDEF';
                 let color = '#';
                 for (let i = 0; i < 6; i++) {
                     color += letters[Math.floor(Math.random() * 16)];
                 }
-                document.body.style.backgournd = color;
+                document.body.style.background = color;
             }
             alert("You're basically a hacker now.");
         </script>
