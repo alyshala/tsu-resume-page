@@ -5,22 +5,39 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
         <style>
             img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; }
+            body { 
+                background-color: indigo;
+                color: lavenderblush;
+            }
+
+            .header { color: lavender;}
         </style>
+        <script>
+            function changeBackgroundColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                document.body.style.backgournd = color;
+            }
+            alert("You're basically a hacker now.");
+        </script>
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="twelve column">
                     <!-- Bio Image -->
-                    <img class="bio-image" src="https://i.ebayimg.com/images/g/IeIAAOSwJBdd8w4E/s-l500.png" alt="bio image">
+                    <img class="bio-image" src="https://pbs.twimg.com/profile_images/871810751161405440/HKtQXJOB_400x400.jpg" alt="alysha love bio pic">
 
                     <!-- Resume Title -->
                     <h2>Alysha Love</h2>
-                    <h5>Web Developer</h5>
+                    <h5>Senior Marketing Manager?!</h5>
 
                     <!-- Contact Info -->
-                    <span><strong>Email:</strong> <a href="mailto:baby.yoda@meme.io">baby.yoda@meme.io</a></span><br>
-                    <span><strong>Phone:</strong> 208-829-2122</span>
+                    <span><strong>Email:</strong> <a href="mailto:alysha_love@intuit.com">alysha_love@intuit.com</a></span><br>
+                    <span><strong>Phone:</strong> 417-425-6975</span>
                 </div>
             </div>
 
@@ -31,14 +48,17 @@
                 <div class="twelve column">
                     <h4>Work History</h4>
 
-                    <h6><strong>Pied Piper</strong> 2017-Present</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Marketing Manager, Content Editor and Strategist</strong> 2018-2019</h6>
+                    <p>Intuit | Eagle, Idaho</p>
 
-                    <h6><strong>Hooli</strong> 2014-2017</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Multiplatform Editor, Outdoors Editor, Breaking News Editor</strong> 2018</h6>
+                    <p>Idaho Statesman | Boise, Idaho</p>
 
-                    <h6><strong>Dunder Mifflin</strong> 2010-2014</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Senior Multiplatform Editor</strong> 2015-2018</h6>
+                    <p>CNN | Washington, DC</p>
+
+                    <h6><strong>Web Editor, Senior Web Producer</strong> 2012-2015</h6>
+                    <p>POLITICO | Arlington, Virginia</p>
                 </div>
             </div>
 
@@ -47,12 +67,17 @@
                 <div class="twelve column">
                     <h4>Education</h4>
 
-                    <h6><strong>Super Hacker U</strong> 2010</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>University of Missouri</strong> 2012</h6>
+                    <ul>
+                        <li>Bachelor of Journalism in Print and Digital Media</li>
+                        <li>Bachelor of Arts in Psychology</li>
+                        <li>Minors in Spanish and multicultural studies</li>
+                        <li>Honors College graduate</li>
+                    </ul>
 
                 </div>
             </div>
-
+            <button onclick="changeBackgroundColor()">Throw A Rave</button>
         </div>
     </body>
 </html>
